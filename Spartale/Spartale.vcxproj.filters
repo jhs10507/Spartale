@@ -66,10 +66,23 @@
     <ClCompile Include="Source\Framework\AbilitySystem\AbilitySystemComponent.cpp" />
     <ClCompile Include="Source\Core\GameWorld.cpp" />
     <ClCompile Include="Source\Core\Actor.cpp" />
+    <ClCompile Include="Source\GameLogic\DataManager.cpp" />
+    <ClCompile Include="Source\GameLogic\MainMenu.cpp" />
+    <ClCompile Include="Source\GameLogic\PauseMenu.cpp" />
+    <ClCompile Include="Source\GameLogic\Story\Scene_Prologue.cpp" />
+    <ClCompile Include="Scene_Begin.cpp" />
+    <ClCompile Include="Scene_TowerGate.cpp" />
+    <ClCompile Include="Scene_FinalBoss.cpp" />
+    <ClCompile Include="Scene_Epiloge.cpp" />
+    <ClCompile Include="Source\GameLogic\Story\Scene_Begin.cpp" />
+    <ClCompile Include="Source\GameLogic\Story\Scene_Epiloge.cpp" />
+    <ClCompile Include="Source\GameLogic\Story\Scene_FinalBoss.cpp" />
+    <ClCompile Include="Source\GameLogic\Story\Scene_TowerGate.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\Town.json" />
     <None Include="Data\Field_1.json" />
+    <None Include="Data\Monsters.json" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Utils\DamageUtils.h" />
@@ -89,5 +102,8 @@
     <ClInclude Include="Source\Core\GameWorld.h" />
     <ClInclude Include="Source\Core\Actor.h" />
     <ClInclude Include="include\json.hpp" />
+    <ClInclude Include="Source\GameLogic\DataManager.h" />
+    <ClInclude Include="Source\GameLogic\MainMenu.h" />
+    <ClInclude Include="Source\GameLogic\PauseMenu.h" />
   </ItemGroup>
 </Project>
