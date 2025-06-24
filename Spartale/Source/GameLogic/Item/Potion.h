@@ -1,17 +1,15 @@
 #pragma once
 #include <memory>
-#include "Player.h"
+#include "GameLogic/Units/Player.h"
 
 class Potion {
-private:
+protected:
 	std::string name;
-	int healAmount;
 
 public:
-	Potion(const std::string& name, int healAmount);
+	Potion(const std::string& name);
+	virtual ~Potion() = default;
 
-	void use(Player& player) const;
-
+	virtual void use(Player& player) const = 0; // 순수 가상 함수
 	std::string getName() const;
-	int getHealAmount() const;
 };
